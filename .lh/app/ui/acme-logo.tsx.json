@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1774508724211,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1774515009262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { GlobeAltIcon } from '@heroicons/react/24/outline';\n-import { font } from '@/app/ui/fonts';\n+import { lusitana } from '@/app/ui/fonts';\n \n \n export default function AcmeLogo() {\n   return (\n     <div\n-      className={`${font.className} flex flex-row items-center leading-none text-white`}\n+      className={`${lusitana.className} flex flex-row items-center leading-none text-white`}\n     >\n       <GlobeAltIcon className=\"h-12 w-12 rotate-[15deg]\" />\n       <p className=\"text-[44px]\">Acme</p>\n     </div>\n"
                 }
             ],
             "date": 1774508724211,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 20,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1774507624399,
@@ -88,6 +88,10 @@
                 {
                     "date": 1774509187538,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,10 @@\n           <Image\n             src=\"/hero-mobile.png\"\n             width={560}\n             height={620}\n-            className=\"hidden md:block\"\n-            alt=\"Screenshots of the dashboard project showing desktop version\"\n+            className=\"block md:hidden\"\n+            alt=\"Screenshot of the dashboard project showing mobile version\"\n           />\n         </div>\n       </div>\n     </main>\n"
+                },
+                {
+                    "date": 1774514980920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import AcmeLogo from '@/app/ui/acme-logo';\n import { ArrowRightIcon } from '@heroicons/react/24/outline';\n import Link from 'next/link';\n import styles from '@/app/ui/home.module.css';\n-import { font } from '@/app/ui/fonts';\n+import { lusitana } from '@/app/ui/fonts';\n import Image from 'next/image';\n \n export default function Page() {\n   return (\n@@ -15,9 +15,9 @@\n         <div className=\"flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20\">\n         <div\n           className=\"relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black\"\n         />\n-          <p className={`${font.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>\n+          <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>\n             <strong>Welcome to Acme.</strong> This is the example for the{' '}\n             <a href=\"https://nextjs.org/learn/\" className=\"text-blue-500\">\n               Next.js Learn Course\n             </a>\n"
                 }
             ],
             "date": 1774507624399,

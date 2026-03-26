@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1774508266626,
@@ -20,6 +20,10 @@
                 {
                     "date": 1774508620804,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n  \n export const inter = Inter({ subsets: ['latin'] });\n export const font = Lusitana({\n     subsets: ['latin'],\n-    weight: '400'\n+    weight: ['400', '700'],\n });\n"
+                },
+                {
+                    "date": 1774514961252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Inter, Lusitana } from 'next/font/google';\n  \n export const inter = Inter({ subsets: ['latin'] });\n-export const font = Lusitana({\n+export const lusitana = Lusitana({\n     subsets: ['latin'],\n     weight: ['400', '700'],\n });\n"
                 }
             ],
             "date": 1774508266626,
