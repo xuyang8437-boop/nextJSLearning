@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/ui/dashboard/latest-invoices.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774511333582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774511333582,
+            "name": "Commit-0",
+            "content": "import { ArrowPathIcon } from '@heroicons/react/24/outline';\nimport clsx from 'clsx';\nimport Image from 'next/image';\nimport { font } from '@/app/ui/fonts';\nimport { LatestInvoice } from '@/app/lib/definitions';\nexport default async function LatestInvoices({\n  latestInvoices,\n}: {\n  latestInvoices: LatestInvoice[];\n}) {\n  return (\n    <div className=\"flex w-full flex-col md:col-span-4\">\n      <h2 className={`${font.className} mb-4 text-xl md:text-2xl`}>\n        Latest Invoices\n      </h2>\n      <div className=\"flex grow flex-col justify-between rounded-xl bg-gray-50 p-4\">\n        {/* NOTE: Uncomment this code in Chapter 7 */}\n\n        {/* <div className=\"bg-white px-6\">\n          {latestInvoices.map((invoice, i) => {\n            return (\n              <div\n                key={invoice.id}\n                className={clsx(\n                  'flex flex-row items-center justify-between py-4',\n                  {\n                    'border-t': i !== 0,\n                  },\n                )}\n              >\n                <div className=\"flex items-center\">\n                  <Image\n                    src={invoice.image_url}\n                    alt={`${invoice.name}'s profile picture`}\n                    className=\"mr-4 rounded-full\"\n                    width={32}\n                    height={32}\n                  />\n                  <div className=\"min-w-0\">\n                    <p className=\"truncate text-sm font-semibold md:text-base\">\n                      {invoice.name}\n                    </p>\n                    <p className=\"hidden text-sm text-gray-500 sm:block\">\n                      {invoice.email}\n                    </p>\n                  </div>\n                </div>\n                <p\n                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}\n                >\n                  {invoice.amount}\n                </p>\n              </div>\n            );\n          })}\n        </div> */}\n        <div className=\"flex items-center pb-2 pt-6\">\n          <ArrowPathIcon className=\"h-5 w-5 text-gray-500\" />\n          <h3 className=\"ml-2 text-sm text-gray-500 \">Updated just now</h3>\n        </div>\n      </div>\n    </div>\n  );\n}\n"
+        }
+    ]
+}

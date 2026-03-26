@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/dashboard/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774509740377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774509740377,
+            "name": "Commit-0",
+            "content": "export default function Page() {\n  return <p>Dashboard Page</p>;\n}"
+        }
+    ]
+}

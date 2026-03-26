@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/dashboard/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1774510289100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1774510587849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import SideNav from '@/app/ui/dashboard/sidenav';\n  \n export default function Layout({ children }: { children: React.ReactNode }) {\n+    console.log(children);\n   return (\n     <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n       <div className=\"w-full flex-none md:w-64\">\n         <SideNav />\n"
+                },
+                {
+                    "date": 1774510608766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import SideNav from '@/app/ui/dashboard/sidenav';\n  \n export default function Layout({ children }: { children: React.ReactNode }) {\n-    console.log(children);\n   return (\n     <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n       <div className=\"w-full flex-none md:w-64\">\n         <SideNav />\n"
+                }
+            ],
+            "date": 1774510289100,
+            "name": "Commit-0",
+            "content": "import SideNav from '@/app/ui/dashboard/sidenav';\n \nexport default function Layout({ children }: { children: React.ReactNode }) {\n  return (\n    <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n      <div className=\"w-full flex-none md:w-64\">\n        <SideNav />\n      </div>\n      <div className=\"grow p-6 md:overflow-y-auto md:p-12\">{children}</div>\n    </div>\n  );\n}"
+        }
+    ]
+}
